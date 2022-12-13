@@ -68,8 +68,25 @@ if st.checkbox("Show graph", key="plot3"):
     alt_plot3
 # Inputs
 st.markdown("## We will now predict whether someone uses LinkedIn based on chosen inputs")
+st.markdown("Income level 1: under $10k")
+st.markdown("Income level 2: 10 to under $20,000")
+st.markdown("Income level 3: 20 to under $30,000  ")
+st.markdown("Income level 4: 30 to under $40,000")
+st.markdown("Income level 5: 40 to under $50,000")
+st.markdown("Income level 6: 50 to under $75,000")
+st.markdown("Income level 7: 75 to under $100,000")
+st.markdown("Income level 8: 100 to under $150,000")
+st.markdown("Income level 9: $150,000 or more")
 income_level = st.selectbox(label="Income level",
 options=(1, 2, 3, 4, 5, 6, 7, 8, 9))
+st.markdown("Education level 1: Less than high school (Grades 1-8 or no formal schooling)")
+st.markdown("Education level 2: High school incomplete (Grades 9-11 or Grade 12 with NO diploma)")
+st.markdown("Education level 3: High school graduate (Grade 12 with diploma or GED certificate)")
+st.markdown("Education level 4: Some college, no degree (includes some community college)")
+st.markdown("Education level 5: Two-year associate degree from a college or university")
+st.markdown("Education level 6: Four-year college or university degree/Bachelor’s degree (e.g., BS, BA, AB)")
+st.markdown("Education level 7: Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)")
+st.markdown("Education level 8: Postgraduate or professional degree, including master’s, doctorate, medical or law degree (e.g., MA, MS, PhD, MD, JD)")
 education_level = st.selectbox(label="Education level",
 options=(1, 2, 3, 4, 5, 6, 7, 8))
 parent = st.selectbox(label="Parental status",
